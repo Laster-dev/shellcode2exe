@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<IlcGenerateStackTraceData>false</IlcGenerateStackTraceData>
+	<PublishAot>true</PublishAot>
+	<StripSymbols>true</StripSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="text\.data_99365824-ab68-4927-93ed-26991ac1740f.bin" />
+    <None Remove="text\.data_d27aa3da-7cd6-40df-8fee-e8191e566082.bin" />
+    <None Remove="text\.idata_83a89128-1ebb-4979-a073-870be37871ac.bin" />
+    <None Remove="text\.pdata_7bca17e5-1ccd-452e-943e-30dd34a35fa9.bin" />
+    <None Remove="text\.reloc_2c080e9b-4046-4663-ab8c-81a6be7eeb9c.bin" />
+    <None Remove="text\.reloc_a3d62948-c2a6-4a2c-9db2-f7889981e140.bin" />
+    <None Remove="text\.rsrc_18b1d31d-0d66-4171-964f-835c823ad711.bin" />
+    <None Remove="text\.rsrc_f104b28b-4858-4bfd-8c2c-4af0c93e29fb.bin" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AsmResolver.PE" Version="5.2.0" />
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="text\.data_99365824-ab68-4927-93ed-26991ac1740f.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="text\.data_d27aa3da-7cd6-40df-8fee-e8191e566082.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="text\.idata_83a89128-1ebb-4979-a073-870be37871ac.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="text\.pdata_7bca17e5-1ccd-452e-943e-30dd34a35fa9.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="text\.reloc_2c080e9b-4046-4663-ab8c-81a6be7eeb9c.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="text\.reloc_a3d62948-c2a6-4a2c-9db2-f7889981e140.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="text\.rsrc_18b1d31d-0d66-4171-964f-835c823ad711.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="text\.rsrc_f104b28b-4858-4bfd-8c2c-4af0c93e29fb.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
